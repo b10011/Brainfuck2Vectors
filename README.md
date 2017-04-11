@@ -14,6 +14,8 @@ When you call these functions, you must be at IO-cell, you dont need to set it u
 # THE MOST IMPORTANT!
 You cannot write value 0 to the list! That is because I intented this to be for handling user inputs (text). If you feel you need to input value 0, you could implement LoopHandle within the data (currently data structure is: IOdata 0 0 0 0 data1 copypath1 data2 copypath2 data1 copypath1 data2 copypath2 ...) if you would add loophandles: (IOdata 0 0 0 0 handle1 data1 copypath1 handle2 data2 copypath2 handle1 data1 copypath1 handle2 data2 copypath2 ...), set all loophandles to non-zero value and loop through the list using them instead of using the data!
 
+Currently I have version under development which will allow zero-values written to the list but it will take some time as I need to rewrite most of the code.
+
 # Example
 
     Read character to IOcell
